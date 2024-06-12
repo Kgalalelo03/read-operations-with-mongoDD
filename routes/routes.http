@@ -1,0 +1,33 @@
+# Add 
+POST http://[::1]:6082/students/add
+Content-Type: application/json
+
+{
+    "studentName": "Jill Scott",
+    "internshipStatus": "unplaced",
+    "outstandingSubjects": 3
+}
+###
+
+# Update 
+
+PUT http://[::1]:6082/students/update/66671eb19981a12ce198b9e8
+Content-Type: application/json
+
+{
+    "studentName": "Jill Scott",
+    "internshipStatus": "placed",
+    "outstandingSubjects": 1
+}
+###
+
+# View all 
+GET http://[::1]:6082/students/view
+###
+
+# View one
+GET http://[::1]:6082/students/view/66671eb19981a12ce198b9e8
+###
+
+# Delete 
+DELETE http://[::1]:6082/students/delete/
